@@ -1,8 +1,10 @@
 const express = require("express");
 const server = express();
 const bodyParser = express.json();
+const router = require("./router");
 
 server.use(bodyParser);
+server.use("/api", router);
 
 server.get("/", (req, res) => {
   res.send(`

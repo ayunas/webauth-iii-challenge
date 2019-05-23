@@ -11,6 +11,7 @@
   "author": "ayunas <ayunas@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^8.0.0",
     "express": "^4.17.0",
     "knex": "^0.16.5",
