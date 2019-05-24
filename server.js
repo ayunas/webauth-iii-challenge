@@ -2,8 +2,9 @@ const express = require("express");
 const server = express();
 const bodyParser = express.json();
 const router = require("./router");
+const cors = require("cors");
 
-server.use(bodyParser);
+server.use(bodyParser, cors());
 server.use("/api", router);
 
 server.get("/", (req, res) => {

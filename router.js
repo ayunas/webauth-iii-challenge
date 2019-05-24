@@ -38,7 +38,7 @@ router.post("/register", (req, res) => {
     });
 });
 
-router.post("/login", (req, res) => {
+router.get("/login", (req, res) => {
   const username = req.headers.username;
   const password = req.headers.password;
 
@@ -63,9 +63,9 @@ router.post("/login", (req, res) => {
     });
 });
 
-router.get("/logout", (req,res) => {
-  
-})
+// router.get("/logout", (req,res) => {
+
+// })
 
 function generateToken(user) {
   const secret = process.env.TOKENSECRET;

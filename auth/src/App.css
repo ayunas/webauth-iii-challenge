@@ -1,0 +1,14 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+form {
+  border: 5px solid blue;
+  padding: 20px;
+}
